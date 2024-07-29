@@ -30,10 +30,25 @@ POST /api/register
 
 header: Content-Type: application/json
 
+body:
 {
-    "name": "John Doe",
-    "email": "
-    "password": "password"
+    "name": "Test User",
+    "email": "testuser@example.com",
+    "password": "password",
     "password_confirmation": "password"
+}
+```
+
+### 2. Login User
+
+```
+POST /api/login
+
+header: Content-Type: application/json
+
+body:
+{
+    "email": "testuser@example.com",
+    "password": "password"
 }
 ```
